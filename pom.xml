@@ -243,9 +243,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>jakarta.mail</artifactId>
-            <version>1.6.7</version>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <version>2.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -443,11 +443,16 @@
     </build>
 
     <distributionManagement>
-      <site>
-        <id>apache.website</id>
-        <name>Apache Website</name>
-        <url>${commons.deployment.protocol}://people.apache.org/www/commons.apache.org/email/</url>
-      </site>    
+        <snapshotRepository>
+            <id>nexus-tdsj</id>
+            <name>Nexus Elanbase Snapshot</name>
+            <url>https://nexus.elanbase.com/repository/tdsj-snapshot/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-tdsj</id>
+            <name>Nexus Elanbase release</name>
+            <url>https://nexus.elanbase.com/repository/tdsj-release/</url>
+        </repository>
     </distributionManagement>
     
     <reporting>

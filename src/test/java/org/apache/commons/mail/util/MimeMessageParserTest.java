@@ -16,22 +16,17 @@
  */
 package org.apache.commons.mail.util;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import jakarta.activation.DataSource;
+import jakarta.mail.Session;
+import jakarta.mail.internet.MimeMessage;
+import org.apache.commons.mail.HtmlEmail;
+import org.junit.Test;
 
 import java.io.File;
 import java.util.List;
 import java.util.Properties;
 
-import javax.activation.DataSource;
-import javax.mail.Session;
-import javax.mail.internet.MimeMessage;
-
-import org.apache.commons.mail.HtmlEmail;
-import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Testing the MimeMessageParser.

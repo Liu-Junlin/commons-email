@@ -16,21 +16,9 @@
  */
 package org.apache.commons.mail;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.util.List;
-
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.internet.MimeMessage;
-
+import jakarta.activation.DataSource;
+import jakarta.activation.FileDataSource;
+import jakarta.mail.internet.MimeMessage;
 import org.apache.commons.mail.mocks.MockHtmlEmailConcrete;
 import org.apache.commons.mail.settings.EmailConfiguration;
 import org.apache.commons.mail.util.MimeMessageParser;
@@ -40,6 +28,13 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.List;
+
+import static org.junit.Assert.*;
 
 /**
  * JUnit test case for HtmlEmail Class.

@@ -16,10 +16,10 @@
  */
 package org.apache.commons.mail.resolver;
 
-import javax.activation.DataSource;
-import javax.activation.FileTypeMap;
-import javax.mail.util.ByteArrayDataSource;
+import jakarta.mail.util.ByteArrayDataSource;
 
+import jakarta.activation.DataSource;
+import jakarta.activation.FileTypeMap;
 import java.io.IOException;
 import java.io.InputStream;
 

@@ -16,15 +16,14 @@
  */
 package org.apache.commons.mail.resolver;
 
-import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.apache.commons.mail.DataSourceResolver;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.mail.DataSourceResolver;
-import org.junit.Test;
-import org.junit.jupiter.api.function.Executable;
+import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * JUnit test case for DateSourceResolver.

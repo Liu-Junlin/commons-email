@@ -16,14 +16,14 @@
  */
 package org.apache.commons.mail.resolver;
 
-import static org.junit.Assert.*;
-
 import org.apache.commons.mail.DataSourceResolver;
 import org.junit.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+
+import static org.junit.Assert.*;
 
 /**
  * JUnit test case for DataSourceUrlResolver.

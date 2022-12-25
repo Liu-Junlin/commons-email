@@ -16,9 +16,9 @@
  */
 package org.apache.commons.mail.resolver;
 
+import jakarta.activation.DataSource;
 import org.apache.commons.mail.DataSourceResolver;
 
-import javax.activation.DataSource;
 import java.io.IOException;
 
 /**

@@ -16,12 +16,11 @@
  */
 package org.apache.commons.mail.resolver;
 
+import jakarta.activation.DataSource;
+import org.apache.commons.io.IOUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
-
-import javax.activation.DataSource;
-
-import org.apache.commons.io.IOUtils;
 
 public abstract class AbstractDataSourceResolverTest {
 

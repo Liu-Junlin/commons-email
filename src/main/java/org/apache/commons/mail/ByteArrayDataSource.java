@@ -16,16 +16,9 @@
  */
 package org.apache.commons.mail;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import jakarta.activation.DataSource;
 
-import javax.activation.DataSource;
+import java.io.*;
 
 /**
  * This class implements a typed DataSource from:<br>
@@ -39,7 +32,7 @@ import javax.activation.DataSource;
  * and it is recommended to do so.
  *
  * @since 1.0
- * @deprecated since 1.4, use {@link javax.mail.util.ByteArrayDataSource} instead
+ * @deprecated since 1.4, use {@link jakarta.mail.util.ByteArrayDataSource} instead
  */
 @Deprecated
 public class ByteArrayDataSource implements DataSource
